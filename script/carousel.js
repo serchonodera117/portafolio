@@ -390,7 +390,7 @@ function react_native(){
 
 
 function opWindow(){
-  var newWin = open('../documents/cv_in_english.pdf','Curriculum','height=700,width=700');
+  var newWin = open('./documents/cv_in_english.pdf','Curriculum','height=700,width=700');
 }
 
 
