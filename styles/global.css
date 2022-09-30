@@ -1,0 +1,11 @@
+.image-profile{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(83, 134, 228);
+    transition: 0.5s
+}.image-profile:hover{
+    transform: scale(1.1);
+    filter: blur(1px) ;
+}
