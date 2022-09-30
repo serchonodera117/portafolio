@@ -91,24 +91,6 @@
     background-color: white;
     box-shadow: 3px  7px 10px 5px rgb(130, 112, 112);    
     border-radius: 15px 15px 15px 15px;
-}.div-publicacion-cuerpo::before{
-    content: "";
-    width: 27.5rem;
-    height: 22rem;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    border-radius: 15px 15px 0px 0px;
-}.div-publicacion-cuerpo::after{  
-    content: "";
-    width:  0;
-    height: 0;
-    margin: 0% 0% 0% 0%;
-    border-left: 27.5rem solid rgb(15, 15, 15);
-    border-right: 0rem solid rgb(30, 27, 27);
-     border-bottom: 22rem solid black;
-    border-radius: 15px 15px 0px 0px;
-    position: absolute;
-    background-color: rgb(164, 130, 130)
 }
 
 .div-description{
@@ -222,7 +204,7 @@
     background-color: black;
 }
 /*promise*/
-@media screen and (max-width:1090px){
+@media screen and (max-width:900px){
     .header{
         background-position: center 0px
      }
@@ -234,5 +216,10 @@
      #aboutme,#showing-cv{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .project-image, .project-image-container,.div-publicacion-cuerpo{
+        width: 22.4rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
