@@ -200,18 +200,18 @@ function kotlin2(){
 
   images.innerHTML =`
   <div class="carousel-item active">
-   <img src="images/projets/Kotlin-gps-app/01.PNG" class="d-block w-100 image-carousel" alt="...">
+   <img src="images/projets/Kotlin-gps-app/01.png" class="d-block w-100 image-carousel" alt="...">
    </div>
    <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/02.PNG" class="d-block w-100 image-carousel" alt="...">
-   </div>
-   
-   <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/03.PNG" class="d-block w-100 image-carousel" alt="...">
+     <img src="images/projets/Kotlin-gps-app/02.png" class="d-block w-100 image-carousel" alt="...">
    </div>
    
    <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/04.PNG" class="d-block w-100 image-carousel" alt="...">
+     <img src="images/projets/Kotlin-gps-app/03.png" class="d-block w-100 image-carousel" alt="...">
+   </div>
+   
+   <div class="carousel-item">
+     <img src="images/projets/Kotlin-gps-app/04.png" class="d-block w-100 image-carousel" alt="...">
    </div>
   `;
 
