@@ -31,7 +31,7 @@ images.innerHTML =`
                 <img src="images/projets/gisselles-adventure/05.PNG" class="d-block w-100 image-carousel image-carousel" alt="...">
               </div>
               <div class="carousel-item">
-              <img src="images/projets/gisselles-adventure/06.PNG" class="d-block w-100 image-carousel image-carousel" alt="...">
+              <img src="images/projets/gisselles-adventure/06.png" class="d-block w-100 image-carousel image-carousel" alt="...">
             </div>
 `;
 
