@@ -30,7 +30,7 @@ images.innerHTML =`
                 <img src="images/projets/gisselles-adventure/05.PNG" class="d-block w-100 image-carousel image-carousel" alt="...">
               </div>
               <div class="carousel-item">
-              <img src="images/projets/gisselles-adventure/06.PNG" class="d-block w-100 image-carousel image-carousel" alt="...">
+              <img src="images/projets/gisselles-adventure/06.png" class="d-block w-100 image-carousel image-carousel" alt="...">
             </div>
 `;
 
@@ -200,25 +200,25 @@ function kotlin2(){
 
   images.innerHTML =`
   <div class="carousel-item active">
-   <img src="images/projets/Kotlin-gps-app/01.PNG" class="d-block w-100 image-carousel" alt="...">
+   <img src="images/projets/Kotlin-gps-app/01.png" class="d-block w-100 image-carousel" alt="...">
    </div>
    <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/02.PNG" class="d-block w-100 image-carousel" alt="...">
-   </div>
-   
-   <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/03.PNG" class="d-block w-100 image-carousel" alt="...">
+     <img src="images/projets/Kotlin-gps-app/02.png" class="d-block w-100 image-carousel" alt="...">
    </div>
    
    <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/04.PNG" class="d-block w-100 image-carousel" alt="...">
+     <img src="images/projets/Kotlin-gps-app/03.png" class="d-block w-100 image-carousel" alt="...">
+   </div>
+   
+   <div class="carousel-item">
+     <img src="images/projets/Kotlin-gps-app/04.png" class="d-block w-100 image-carousel" alt="...">
    </div>
   `;
 
   description.innerHTML =`
   <p><b>Description:</b> it's an exam for an specific school subject<br><br>
 
-  this app was created by using the api of google and kotlind in android studio.<br><br>
+  this app was created by using the api of google and kotlin in android studio.<br><br>
 
   features: you can search any place you want, you can search by name and coordenates<br><br>
 
