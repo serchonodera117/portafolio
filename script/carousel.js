@@ -30,7 +30,7 @@ images.innerHTML =`
                 <img src="images/projets/gisselles-adventure/05.PNG" class="d-block w-100 image-carousel image-carousel" alt="...">
               </div>
               <div class="carousel-item">
-              <img src="images/projets/gisselles-adventure/06.png" class="d-block w-100 image-carousel image-carousel" alt="...">
+              <img src="images/projets/gisselles-adventure/06.PNG" class="d-block w-100 image-carousel image-carousel" alt="...">
             </div>
 `;
 
@@ -44,7 +44,7 @@ modes, for example rpg and platformer.<br><br>
 
 features: you can play it on web and desktop, to play also you can use 
 keyboeard, any console control or touch buttons that apears
-when you devise has a touch screen. the game is conformed for many scenes,
+when you device has a touch screen. the game is conformed by many scenes,
 and a lineal story about the protagonist<br><br>
 
 controls: <br>
@@ -102,7 +102,7 @@ function webfavnime(){
     myFavnime is a social media to watch series and read comics, it has a login to regist users
     upload media and documents, it has it's own data basa hosted in 000webhost.<br><br>
 
-    features: web apllication with a sql database and api made in php and phpmyadmin<br><br>
+    features: web apllication with a sql database and api made on php and phpmyadmin<br><br>
 
     </p>
     <div id="content-buton-project">
@@ -165,10 +165,10 @@ function kotlin1(){
  'seller' or 'customer'
  <br><br>
 
- A customer can upload its business, seller user can uplowad products and items into his business or enterprises 
+ A customer can upload his business, seller user can uplowad products and items into his business or enterprises 
  as a customer user, you can make a research of all bussiness, bussiness in your city, or make a research by name, type or city,
  also you can make the same type of researcch for any product, the app has a nav menu, and some fragments, bussiness (all, local or x type),
- products and services, sales car and a fragment to your profile, you can buy, cancel product, edit your bought befor you paid, and finaly, 
+ products and services, shopping cart and a fragment to your profile, you can buy, cancel product, edit your bought befor you paid, and finaly, 
  once time you recieve your product, you can vote it, then, other users can se the average for that product.<br><br>
 
  features: Any user can buy, comment, cancel products, add products to your shopping car, edit them and delete them,
@@ -179,7 +179,7 @@ function kotlin1(){
  this projet is finished.
  </p>
  <div id="content-buton-project">
- <a class="button-go" onclick="open('https://www.google.com/','Project','height=700,width=700')">
+ <a class="button-go" onclick="open('https://github.com/serchonodera117/proyecto_final','Project','height=700,width=700')">
  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
  </svg>
@@ -200,18 +200,18 @@ function kotlin2(){
 
   images.innerHTML =`
   <div class="carousel-item active">
-   <img src="images/projets/Kotlin-gps-app/01.png" class="d-block w-100 image-carousel" alt="...">
+   <img src="images/projets/Kotlin-gps-app/01.PNG" class="d-block w-100 image-carousel" alt="...">
    </div>
    <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/02.png" class="d-block w-100 image-carousel" alt="...">
-   </div>
-   
-   <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/03.png" class="d-block w-100 image-carousel" alt="...">
+     <img src="images/projets/Kotlin-gps-app/02.PNG" class="d-block w-100 image-carousel" alt="...">
    </div>
    
    <div class="carousel-item">
-     <img src="images/projets/Kotlin-gps-app/04.png" class="d-block w-100 image-carousel" alt="...">
+     <img src="images/projets/Kotlin-gps-app/03.PNG" class="d-block w-100 image-carousel" alt="...">
+   </div>
+   
+   <div class="carousel-item">
+     <img src="images/projets/Kotlin-gps-app/04.PNG" class="d-block w-100 image-carousel" alt="...">
    </div>
   `;
 
@@ -224,7 +224,7 @@ function kotlin2(){
 
   </p>
   <div id="content-buton-project">
-  <a class="button-go" onclick="open('https://www.google.com/','Project','height=700,width=700')">
+  <a class="button-go" onclick="open('https://github.com/serchonodera117/gps_examen','Project','height=700,width=700')">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
   </svg>
@@ -391,6 +391,4 @@ function react_native(){
 function opWindow(){
   var newWin = open('./documents/cv_in_english.pdf','Curriculum','height=700,width=700');
 }
-
-
 
