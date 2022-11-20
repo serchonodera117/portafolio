@@ -166,7 +166,7 @@ function kotlin1(){
  as a seller user, you can add products to your store, edit them, delete them ad hide them, finaly, both users can see the process of the sale
  both types of users have a record, but seller user has a record of his sales.
  <br><br>
- this projet is finished.
+ this project was createrd with kotlin, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
  </p>
  <div id="content-buton-project">
  <a class="button-go" onclick="open('https://github.com/serchonodera117/proyecto_final','Project','height=700,width=700')">
