@@ -204,6 +204,15 @@
 }.container-modal{
     background-color: black;
 }
+
+/*modal de contacto*/
+
+.contact-form-item{
+    margin-bottom: 2rem;
+}.mmensaje{
+    width: 100%;
+    height: 100%;
+}
 /*promise*/
 @media screen and (max-width:900px){
     .header{
