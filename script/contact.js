@@ -50,7 +50,7 @@ function checkMessage(message){return (message.trim()==='')? false : true;}
 function checkAsunto(asunto){return (asunto.trim()==='')?false : true;}
 
 function enviar(data){
-   let url= "https://registrosappinventor.000webhostapp.com/contacto/thecontact.php?";
+   let url= "https://myfavnime.000webhostapp.com/contact/contact.php?";
 
    let progressBar= document.getElementById("progressBar");
    progressBar.style.display = 'block';
