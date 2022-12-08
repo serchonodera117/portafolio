@@ -59,9 +59,6 @@ function enviar(data){
    fetch(url , {
       method: 'POST',
       body: JSON.stringify(data),
-      Headers: {
-         Accept: 'application/json'
-      }
    })
    
    .then(response => response.text())
