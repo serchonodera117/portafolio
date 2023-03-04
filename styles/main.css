@@ -1,11 +1,16 @@
 *{
     margin: 0;
 }
-.header{
-    width: 99%;
+#app{
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
+}
+.header{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
     height: 17rem;
     background-color: black;
     border-radius: 15px  15px  0px  0px; 
@@ -16,18 +21,17 @@
     margin-left: auto;
     margin-right: auto;
     display: table;
- }.img-index-page{
-    margin-left: 3%;
-    margin-right: 3%;   
-    position: absolute;
+ }.content-user{
     margin-top: 13rem;
  }.my-name{
-    margin-top: 21rem;
     margin-left: auto;
     margin-right: auto;
     display: table;
     color: rgb(37, 9, 85)
 }.image-profile{
+    margin-left:auto;
+    margin-right: auto; 
+    display: table;  
     width: 7rem;
     height: 7rem;
     object-fit: cover;
@@ -87,4 +91,76 @@
     cursor: pointer;
     background-color: rgb(24, 31, 163);
 
+}
+
+/*------Cards*/
+.cards-container{
+    background-color: rgb(108, 50, 50);
+    width: 100%;
+    height: 4rem;
+    padding-left: 5%;
+    padding-right:5%;
+    align-items: center;
+}.div-card-body{
+    height: 27rem;
+    width: 27.5rem;
+    margin: 20px;
+    float:left;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 3px  7px 10px 3px rgb(208, 194, 194);    
+    border-radius: 15px 15px 15px 15px;
+}.project-image{
+    width: 100%;
+    height: 20rem;
+    transition: 0.5s;
+    object-fit: cover;
+    margin-bottom: -10px;
+    border-radius: 15px 15px 0px 0px;
+}.project-image:hover{
+   filter: blur(3px) grayscale(1);
+   scale: 0.80;
+}
+.inner-textimg-container{
+    width: 27.5rem;
+    min-height: 20rem;
+    border-radius: 15px 15px 0px 0px;
+    opacity: 1;
+    height: 3rem;
+    position: absolute;
+    transition: 0.5s all;
+}
+.inner-textimg-container:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.427);
+    backdrop-filter: blur(3px);
+    filter: grayscale(1);
+    opacity: 1
+}
+.inner-textimg-container:hover .inner-text-img{
+    display: table;
+    opacity: 1;
+}
+.inner-text-img{
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    margin-top: 9rem;
+    opacity: 0;
+    text-decoration: underline;
+    color: white;
+    font-size: 22px;
+}
+.div-description{
+    margin-top: 0px;
+    margin-left: 0.5rem;
+    position: absolute;
+    display: table;
+    z-index: 1;
+}.img-techtnology-project{
+    object-fit: cover;
+    height: 50px;
+    margin-right: 2rem;
+    width: 50px;
+    border-radius: 50%;
 }

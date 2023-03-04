@@ -14,12 +14,12 @@
     <div id="app">
         <header class="header">
             <div class="header-content">
-               <img class="image-profile img-index-page" src="images/me.jpg">
+               <div class="content-user">
+                <img class="image-profile img-index-page" src="images/me.jpg">
                <h4 class="my-name">Sergio Garcia Michel</h4>
+               <div>
             </div>
        </header>    
-   
-
 
     <!--Buttons------------------------------------------------------------->
     <div class="div-container-botones">
@@ -77,6 +77,25 @@
                 </svg>
             </label>
         </div> 
+    </div>
+
+    <!--PROJECT CARDS-->
+    <br><br><br>
+    <hr>
+    <div class="cards-container">
+     <a class="div-card-body" v-for="project in cardInfo" v-bind:key="project">
+        <div class="project-img-container">
+            <div class="inner-textimg-container"><span class="inner-text-img">
+                See more
+            </span></div>
+            <img class="project-image" alt="img_project.png" :src="project.p_img">
+        </div>
+        <hr>
+        <div class="div-description">
+            <img class="img-techtnology-project" :src="project.technology">
+            {{project.name}} 
+          </div>
+     </a>   
     </div>
 </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
