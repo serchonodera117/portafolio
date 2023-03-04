@@ -1,11 +1,14 @@
 :root{
+    --body: rgba(245, 244, 255, 0.2);
     --card-desktop-x: 27.5rem;
     --card-desktop-y: 27rem;
-
     --card-mobile-x: 20rem;
 }
 *{
     margin: 0;
+}
+.body{
+    background-color:var(--body);
 }
 #app{
     margin-left: 5px;
@@ -105,7 +108,6 @@
     margin-left: auto;
     margin-right: auto;
     display: table;
-    position: relative;
 }.div-card-body{
     height: var(--card-desktop-y);
     width: var(--card-desktop-x);
@@ -172,7 +174,7 @@
 
 
 @media only screen and (max-width: 490px){
-    .div-card-body{
+    .div-card-body,.inner-textimg-container{
       width: var(--card-mobile-x);
     }
 }

@@ -5,7 +5,7 @@ let myApp = {
                 {
                     name:"Gisselle's Adventure",
                     p_img:"images/projets/gisselles-adventure/01.PNG",
-                    technology:"/images/projets/Icon-tech/godot.png",
+                    technology:"images/projets/Icon-tech/godot.png",
                 },
                 {
                     name:"myFavnime",
