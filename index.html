@@ -25,7 +25,8 @@
     <br><br><br>
     <hr>
     <div class="cards-container">
-     <a class="div-card-body" v-for="project in cardInfo" v-bind:key="project">
+     <a class="div-card-body" data-bs-toggle="modal" data-bs-target="#Modal-projects" v-for="(project,index) in cardInfo" 
+     v-bind:key="project" @click="setproject(index)">
         <div class="project-img-container">
             <div class="inner-textimg-container"><span class="inner-text-img">
                 See more
@@ -39,8 +40,100 @@
           </div>
      </a>   
     </div>
+    
+    <!--MODAL PEOJECT-->
+    <div class="modal fade" id="Modal-projects" width="27.5rem" height="67rem" tabindex="-1" aria-labelledby="Modal-projects" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="selected-ptoject">Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="container-modal">
+                    <div id="carouselExampleIndicators"  class="carousel slide" data-bs-ride="true">
+                        <div id="carousel-btn-indicators" class="carousel-indicators"></div>
+                        <div id="photos-project" class="carousel-inner">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>  
+           </div>
+                     <div id="cuerpo-texto">
+                    </div> 
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+          </div>
+        </div>
+      </div>
 
-     <!--Buttons------------------------------------------------------------->
+      <!--modal de gmail-->
+  <div class="modal fade" id="ModalGmail" tabindex="-1" aria-labelledby="ModalGmail" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contact by Gmail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="form-contact">
+        <div class="modal-body">
+                <div class="contact-form-item">
+                  <label for="asunto">Subject</label>
+                  <input id="asunto" name="Asunto" v-model="emailContact.subject" type="text" placeholder="subject of contact" required>
+                  </div>
+                <div class="contact-form-item">
+                <label for="emisor-name">Name</label>
+                <input id="emisor-name" name="nombre"v-model="emailContact.name" type="text" placeholder="name example" required>
+                </div>
+                
+                <div class="contact-form-item">
+                <label for="emisor-email">Email</label>
+                <input id="emisor-email" name="correo" v-model="emailContact.email" placeholdertype="email" placeholder="example@example.com" required>
+                </div>
+
+                <div class="contact-form-item">
+                  <label for="emisor-mensaje">Message:</label><br>
+                  <textarea class="mmensaje" id="emisor-mensaje" name="mensaje" v-model="emailContact.message" placeholder="Body of Message" required></textarea> 
+                </div>
+
+                <div class="alert alert-danger d-flex align-items-center" role="alert" v-if="notValidData">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    <div>
+                      Dont't leave empty spaces!
+                    </div>
+                  </div>
+                  
+                  <div class="progress" >
+                    <div  id="progressBar" style="display: none" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="close_modal" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" @click="gmail_contact" id="sendmessage" class="btn btn-primary" :disabled="(!emailContact.name  || !emailContact.email || !emailContact.message || !emailContact.subject)">
+                        <svg v-if="(!emailContact.name  || !emailContact.email || !emailContact.message || !emailContact.subject)" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                        </svg>
+                        <svg v-if="(emailContact.name  && emailContact.email && emailContact.message && emailContact.subject)" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                        </svg>
+                        Send message
+                    </button>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+
+    <!--Buttons------------------------------------------------------------->
      <div class="div-container-botones">
         <input type="checkbox" id="btn-mas"> 
         <div class="div-botones">     
@@ -52,13 +145,13 @@
            </svg>
            </a>
            <!--Whatsapp--> 
-           <a id="whats">
+           <a id="whats" @click="wsp_contact">
                <svg class="icons-butons"xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
                </svg>
            </a>
            <!--cv-->
-           <a id="notificaciones"  class="btn-bell-notifitions" onclick="opWindow()">
+           <a id="notificaciones"  class="btn-bell-notifitions" onclick="open('documents/cv_in_english.pdf','Curriculum','height=700,width=700')">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
                    <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                    <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
@@ -100,6 +193,8 @@
 
      <hr>
      <div class="footer">
+        <b>Developer Portfolio</b>
+        <p>Designed and developed by Sergio Garcia Michel. ©2023. All rights reserved.</p>
      </div>
 </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

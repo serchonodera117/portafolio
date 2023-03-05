@@ -170,9 +170,66 @@
     margin-right: 2rem;
     width: 50px;
     border-radius: 50%;
+}.footer{
+    border-top: 1px solid rgb(214, 215, 221);
+    text-align: center;
+    background-color: rgb(243, 230, 254);
+    padding: 5px;
+    margin-top: -10px
 }
 
+/*MODALES*/
+/*modal project img*/
+.image-carousel{
+    object-fit:scale-down;
+    width: 26rem;
+    height: 25rem;
+}.container-modal{
+    background-color: black;
+}
+#cuerpo-texto{
+    overflow-y: scroll;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    height: 10rem;
+    text-align: left;  
+}#content-buton-project{
+    margin-left: auto;
+    margin-right: auto;
+    display:table;
+    margin-top: 2rem;
+    margin-bottom: 2rem;;
+}.button-go{
+    background-color: transparent;
+    border: 2px solid rgb(90, 14, 204);
+    color: 2px solid rgb(90, 14, 204);
+    height: 2.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    transition: 0.3s;
+    border-radius: 15px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: table;
+    position: relative;
+    float: right;
+}.button-go:hover{
+    scale: 1.1;
+    box-shadow: 2px 5px 7px 0px rgb(217, 63, 255);
+    border: 2px solid rgb(186, 145, 246);
+    color: 2px solid rgb(186, 145, 246);
+    background-color: rgb(248, 230, 247);
 
+}
+.contact-form-item{
+    margin-bottom: 2rem;
+}.mmensaje{
+    width: 100%;
+    height: 100%;
+}
 @media only screen and (max-width: 490px){
     .div-card-body,.inner-textimg-container{
       width: var(--card-mobile-x);
