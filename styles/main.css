@@ -3,6 +3,8 @@
     --card-desktop-x: 27.5rem;
     --card-desktop-y: 27rem;
     --card-mobile-x: 20rem;
+
+    --sticked-border: 3px groove rgb(61, 27, 134)!important;
 }
 *{
     margin: 0;
@@ -47,7 +49,19 @@
     border-radius: 50%;
     border: 5px solid rgb(83, 134, 228);
     transition: 0.5s
-}.image-profile:hover{
+}.image-profile-nav{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 3rem;
+    height: 3rem;
+    visibility: hidden;
+    opacity: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(6, 8, 70, 0);
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.image-profile:hover{
     transform: scale(1.1);
     filter: blur(1px) ;
 }
@@ -61,7 +75,7 @@
     position: fixed;
     bottom: 75px;
     right: 20px;
-    z-index: 10;
+    z-index: 20;
 }
 .icons-butons{
     color: white;
@@ -103,6 +117,9 @@
 }
 
 /*------Cards*/
+.area{
+    transition: 0.5s ease-in;
+}
 .cards-container{
     width: 95%;
     margin-left: auto;
@@ -117,10 +134,23 @@
     background-color: white;
     box-shadow: 3px  7px 10px 3px rgb(208, 194, 194);    
     border-radius: 15px 15px 15px 15px;
-}.project-image{
+    transition: 0.3s ease-in-out;
+}.div-card-body:hover {
+    scale: 1.03;
+    transform: translateY(-10px);
+    box-shadow: 7px  14px 10px 3px rgb(212, 214, 238);    
+    background-color: rgb(252, 242, 242);
+}.div-card-body:hover .inner-textimg-container{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.427);
+    backdrop-filter: blur(3px);
+    filter: grayscale(1);
+    opacity: 1
+}
+.project-image{
     width: 100%;
     height: 20rem;
-    transition: 0.5s;
+    transition: 0.5s ease-in;
     object-fit: cover;
     margin-bottom: -10px;
     border-radius: 15px 15px 0px 0px;
@@ -135,10 +165,8 @@
     opacity: 1;
     height: 3rem;
     position: absolute;
-    transition: 0.5s all;
 }
 .inner-textimg-container:hover{
-    transition: 0.5s;
     background-color: rgba(0, 0, 0, 0.427);
     backdrop-filter: blur(3px);
     filter: grayscale(1);
@@ -147,6 +175,7 @@
 .inner-textimg-container:hover .inner-text-img{
     display: table;
     opacity: 1;
+
 }
 .inner-text-img{
     margin-left: auto;
@@ -154,6 +183,7 @@
     display: none;
     margin-top: 9rem;
     opacity: 0;
+    transition: 0.5s ease-in;
     text-decoration: underline;
     color: white;
     font-size: 22px;
@@ -170,7 +200,8 @@
     margin-right: 2rem;
     width: 50px;
     border-radius: 50%;
-}.footer{
+}.footer{    
+    bottom: 0px;
     border-top: 1px solid rgb(214, 215, 221);
     text-align: center;
     background-color: rgb(243, 230, 254);
@@ -230,8 +261,77 @@
     width: 100%;
     height: 100%;
 }
+/*Nav-menu*/
+.nav-container{
+    width: 99%;
+    height: 4rem;
+    background-color: rgb(41, 4, 119);
+    border: 2px solid rgb(83, 41, 173); 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: 0.5s ease-in;
+    border-radius: 10px 10px 10px 10px;
+    display: table;
+}.sticked-nav{
+    border-top: 0px;
+    height: 5rem;
+    border-left: var(--sticked-border);
+    border-right: var(--sticked-border);
+    border-bottom: var(--sticked-border); 
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 2px 7px 3px rgb(161, 234, 174);
+    background-color: rgba(42, 7, 79, 0.848);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 15px 2px rgb(rgb(143, 105, 105));    
+}#sentinel{
+    height: 1px;
+    top: 0;
+    margin-bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}.mysearch{
+    margin-top: 15px;
+    width: 80%;
+    background-color: #eff3ffac;
+    border: 2px solid #cf93e173;
+    border-radius: 50px;
+    color:  #040e7c;
+    padding-left: 20px;
+    transition: 0.5s ease-in;
+    outline: 5px;
+}.mysearch:focus{
+    outline: 3px solid rgba(143, 138, 159, 0.718);
+    outline-offset:3px;
+} .mysearch::-webkit-input-placeholder{
+    color: #040e7c;
+}.radio-btn{
+    color: white;
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height:100%
+}.radio-btn li{
+    height: 100%;
+    padding: 1em 1em;
+    margin-bottom: -1.5em;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}.radio-btn li:hover{
+    background-color: #303aa1ad;
+}
+.radio-btn li:has(input[type="radio"]:checked){
+    background-color: #5f68cdad;
+    border: 1px solid rgb(214, 230, 247);
+    transform: translateY(5px);
+}
 @media only screen and (max-width: 490px){
     .div-card-body,.inner-textimg-container{
       width: var(--card-mobile-x);
+    }.radio-btn li{
+        font-size: 12px;
     }
 }

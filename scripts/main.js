@@ -7,6 +7,7 @@ let myApp = {
                 email:'',
                 message:''
             },
+            section: 2, //default
             notValidData: false,
             cardInfo:[
                 {
@@ -454,6 +455,9 @@ let myApp = {
          checkGmail(gmail){return (gmail.trim()==='')? false : true;},
          checkMessage(message){return (message.trim()==='')? false : true;},
          checkAsunto(asunto){return (asunto.trim()==='')?false : true;},
+         menuChange(value){
+          this.section = value;
+         }
     }
 }
 let buildApp = Vue.createApp(myApp).mount('#app');
