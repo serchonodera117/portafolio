@@ -17,6 +17,7 @@
                <div class="content-user">
                 <img class="image-profile img-index-page" src="images/me.jpg">
                <h4 class="my-name">Sergio Garcia Michel</h4>
+               <p class="my-name">Software Engineer</p>
                <div>
             </div>
        </header>    
@@ -163,7 +164,7 @@
      </div>
 
      <!--MENU-->
-     <br><br><br>
+     <br><br><br><br>
      <hr>
      <div id="sentinel"></div>
      <nav id="navbar" role="navigation"class="nav-container" class="">
@@ -178,11 +179,11 @@
             <ul class="radio-btn">
               <li>
                 <label for="op1">About me</label>
-                <input id="op1" v-on:change="menuChange(1)" style="display: none;" type="radio" name="option" value="1">
+                <input id="op1" v-on:change="menuChange(1)" style="display: none;" type="radio" name="option" value="1" checked>
               </li>
               <li>
                 <label for="op2">My projects</label>
-                <input id="op2"  v-on:change="menuChange(2)" style="display: none;" type="radio" name="option" value="2" checked>
+                <input id="op2"  v-on:change="menuChange(2)" style="display: none;" type="radio" name="option" value="2">
               </li>
               <li>
                 <label for="op3">Certifications</label>
@@ -198,7 +199,29 @@
       </nav>
     <!--ABOUT ME-->  
     <div id="div-aboutme" class="area" v-if="section==1">
-      about me
+      <section  class="aboutme">
+        <h4 class="centered-text">Skills</h4>
+        <div class="skills">
+          <hr>
+          <h5 class="centered-text">Soft Skills</h5>
+          <hr>
+        </div>
+        <div class="skills">
+          <br>
+          <h5 class="centered-text">Hard Skills</h5>
+          <hr>
+            <div class="cards-container">
+              <div class="skill-body" v-for="(hskill,index) in hard_skills" :key="index">
+                <img  :src="hskill.img" class="img-skill" alt="technology-img">
+                <span class="centered-text title-skill">   
+                    <b>{{hskill.name}}</b><hr>  
+                    <b>Level:</b> {{hskill.level}}
+                </span>
+              </div>
+            </div>
+            <hr><br>
+        </div>
+      </section>
     </div>
 
       <!--PROJECT CARDS-->

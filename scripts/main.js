@@ -7,7 +7,7 @@ let myApp = {
                 email:'',
                 message:''
             },
-            section: 2, //default
+            section: 1, //default
             notValidData: false,
             cardInfo:[
                 {
@@ -392,7 +392,117 @@ let myApp = {
                     </div>
                     `,
                 }
-            ]
+            ],
+            hard_skills: [
+              {
+                name: 'English',
+                img:'images/projets/Icon-tech/english.png',
+                level:' B2'
+              },
+              {
+              name: 'Javascript',
+              img:'images/projets/Icon-tech/js.png',
+              level:' Intermediate'
+            },
+            {
+              name: 'C#',
+              img:'images/projets/Icon-tech/sechar.png',
+              level:' Intermediate'
+            },{
+              name: 'Kotlin',
+              img:'images/projets/Icon-tech/kotlin.png',
+              level:' Intermediate'
+            },{
+              name: 'Godot engine',
+              img:'images/projets/Icon-tech/godot.png',
+              level:' Intermediate'
+            },
+            {
+              name: 'Vue.js',
+              img:'images/projets/Icon-tech/vuejs.png',
+              level:' Intermediate'
+            },
+            {
+              name: 'Adove photoshop',
+              img:'images/projets/Icon-tech/ps.png',
+              level:' Intermediate'
+            },
+            {
+              name: 'Android studio',
+              img:'images/projets/Icon-tech/astudio.png',
+              level:' Intermediate'
+            },
+            {
+              name: 'Git',
+              img:'images/projets/Icon-tech/git.png',
+              level: ' Beginner'
+            },
+            {
+              name: 'Github',
+              img:'images/projets/Icon-tech/github.png',
+              level: ' Beginner'
+            },
+            {
+              name: 'Node js',
+              img: 'images/projets/Icon-tech/nodejs.png',
+              level: ' Beginner' 
+            },
+            {
+              name: 'React-Native',
+              img:'images/projets/Icon-tech/reactnative.png',
+              level:' Beginner'
+            },
+            {
+              name: 'Blazor',
+              img:'images/projets/Icon-tech/Blazor.png',
+              level:' Beginner'
+            },
+            {
+              name:'Xamarin',
+              img:'images/projets/Icon-tech/xamarin.png',
+              level: ' Beginner'
+            },
+            {
+              name: 'SQL Workbench',
+              img:'images/projets/Icon-tech/sql-workbench.png',
+              level:' Beginner'
+            },
+            {
+              name: 'Java',
+              img:'images/projets/Icon-tech/java.png',
+              level: ' Beginner'
+            },
+            {
+              name: 'Blender',
+              img:'images/projets/Icon-tech/blender.png',
+              level:' Beginner'
+            },
+            {
+              name: 'C',
+              img:'images/projets/Icon-tech/c.png',
+              level:' Beginner'
+            },
+            {
+              name: 'Php',
+              img:'images/projets/Icon-tech/phpicon.png',
+              level:' Beginner'
+            },
+            {
+              name: 'Php myAdmin',
+              img:'images/projets/Icon-tech/phpmyadmin.png',
+              level:' Beginner'
+            },
+            {
+              name: 'SQL Server',
+              img:'images/projets/Icon-tech/sqlsever.png',
+              level:' Beginner'
+            },
+            {
+              name: 'Unity',
+              img:'images/projets/Icon-tech/unity.png',
+              level:' Beginner'
+            },
+          ]
         }
     }, 
     methods:{

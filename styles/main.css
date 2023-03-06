@@ -4,6 +4,7 @@
     --card-desktop-y: 27rem;
     --card-mobile-x: 20rem;
 
+    --title-card: rgba(10, 5, 61, 0.767);
     --sticked-border: 3px groove rgb(61, 27, 134)!important;
 }
 *{
@@ -263,7 +264,7 @@
 }
 /*Nav-menu*/
 .nav-container{
-    width: 99%;
+    width:99%;
     height: 4rem;
     background-color: rgb(41, 4, 119);
     border: 2px solid rgb(83, 41, 173); 
@@ -328,10 +329,72 @@
     border: 1px solid rgb(214, 230, 247);
     transform: translateY(5px);
 }
+
+/*------ABOUT ME*/
+.centered-text{text-align: center;}
+.justified-text{text-align: justify;}
+.skills{
+    background-color: rgb(230, 232, 250);
+    border-radius: 10px;
+}.skill-body{
+    width:10rem;
+    height:10rem;
+    background-color: rgb(255, 243, 250);
+    border-radius: 10px;
+    float: left;
+    margin: 15px;
+}.skill-body:hover .title-skill{
+    opacity: 1;
+    transform: translateY(-4rem);
+}.skill-body:hover .title-skill:after{
+    bottom: -7px;
+}
+.img-skill{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}.title-skill{
+    transition: 0.3s ease-in;
+    opacity: 0;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -13rem;
+    display: table;
+    position: relative;
+    border-radius: 10px;
+    z-index: 5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    backdrop-filter: blur(10px);
+    background-color: var(--title-card);
+}.title-skill:after{
+    transition: 0.5s ease-in;
+    backdrop-filter: blur(10px);
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    position:relative;
+    width: 1rem;
+    height: 1rem;
+    z-index: 10;
+    transform: rotate(45deg);
+    bottom: 7px;
+    background-color: var(--title-card);
+    border-top-left-radius:  10px;
+}
 @media only screen and (max-width: 490px){
     .div-card-body,.inner-textimg-container{
       width: var(--card-mobile-x);
     }.radio-btn li{
         font-size: 12px;
+    }.skill-body{
+        width: 7rem;
+        height:7rem;
+        margin: 20px;
     }
 }
