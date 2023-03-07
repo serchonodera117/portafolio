@@ -502,6 +502,31 @@ let myApp = {
               img:'images/projets/Icon-tech/unity.png',
               level:' Beginner'
             },
+          ],
+          soft_skills: [{
+            name: 'Communication',
+            img:'images/projets/Icon-sft-skills/communication.png'
+          },
+          {
+            name: 'Team work',
+            img:'images/projets/Icon-sft-skills/teamwork.png'
+          },
+          {
+            name: 'Problem solving',
+            img:'images/projets/Icon-sft-skills/problem-solving.png'
+          },
+          {
+            name: 'Stress management',
+            img:'images/projets/Icon-sft-skills/stress_m.png'
+          },
+          {
+            name: 'Adaptability',
+            img:'images/projets/Icon-sft-skills/adaptability.png'
+          },
+          {
+            name: 'Hardworking',
+            img:'images/projets/Icon-sft-skills/hard_working.png'
+          }
           ]
         }
     }, 

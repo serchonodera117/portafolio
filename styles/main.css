@@ -331,8 +331,16 @@
 }
 
 /*------ABOUT ME*/
+
 .centered-text{text-align: center;}
 .justified-text{text-align: justify;}
+.aboutme{width: 100%;}
+.description{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;    
+    width: 70%;
+}
 .skills{
     background-color: rgb(230, 232, 250);
     border-radius: 10px;
@@ -396,5 +404,9 @@
         width: 7rem;
         height:7rem;
         margin: 20px;
+    }.description{
+        width: 90%;
+    }.title-skill{
+        bottom: -3rem;
     }
 }

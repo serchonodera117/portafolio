@@ -199,13 +199,67 @@
       </nav>
     <!--ABOUT ME-->  
     <div id="div-aboutme" class="area" v-if="section==1">
+      <br>
+      <section class="aboutme">
+        <br> 
+        <div class="description">
+          <h4 class="centered-text">Description</h4>
+          <p>
+            My name is Sergio García Michel, 21 years old, majoring in software engineering. 
+            I have more experience by programming in front-end area, but
+            my career objective is to beacome in a fullstack developer because 
+            I like both parts of process developing (front-end and back-end).
+          </p>
+          <p>
+            Software Engineer student with design bases, deep knowledge in web
+            and mobile programming
+          </p>
+          <p>
+            My greatest strength is my responsabity 
+            because I work hard until to reach the objectives.<br> 
+            My greatest weakness is my little
+            experience with big or comercial projects
+          </p>
+          <h5 class="centered-text">Hobbies</h5>
+          <p>
+            <ul>
+              <li>Developing videogames</li>
+              <li>
+                <details>
+                  <summary>Drawing</summary>
+                  <p>Some of my dragings</p>
+                  <ol style="list-style: none; display: flex;">
+                    <li><img src="images/projets/hobbies/draw1.PNG" class="img-skill"></li>
+                    <li><img src="images/projets/hobbies/draw2.PNG" class="img-skill"></li>
+                    <li><img src="images/projets/hobbies/draw3.PNG" class="img-skill"></li>
+                  </ol>
+                </details>
+              </li>
+              <li>Reading</li>
+              <li>Practicing some new techniques to code</li>
+            </ul>
+          </p>
+        </div>
+      </section>
+      <hr>
       <section  class="aboutme">
         <h4 class="centered-text">Skills</h4>
         <div class="skills">
-          <hr>
+          <br>
           <h5 class="centered-text">Soft Skills</h5>
           <hr>
+          <div class="cards-container">
+            <div class="skill-body" v-for="(sskill,index) in soft_skills" :key="index">
+              <img  :src="sskill.img" class="img-skill" alt="softskill-img">
+              <span class="centered-text title-skill">   
+                  <b>{{sskill.name}}</b><hr>
+                  
+              </span>
+            </div>
+          </div>
+          <hr><br>
         </div>
+        <br>
         <div class="skills">
           <br>
           <h5 class="centered-text">Hard Skills</h5>
