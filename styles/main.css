@@ -6,6 +6,8 @@
 
     --title-card: rgba(10, 5, 61, 0.767);
     --sticked-border: 3px groove rgb(61, 27, 134)!important;
+
+    --delay-header-img: 1s ease-in;
 }
 *{
     margin: 0;
@@ -26,10 +28,20 @@
     height: 17rem;
     background-color: black;
     border-radius: 15px  15px  0px  0px; 
-    background-image: url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
- }.header-content{
+ }.head0{
+    transition: var(--delay-header-img);
+    background-image: url(../images/header_bg.png);
+ }.head1{
+    transition: var(--delay-header-img);
+    background-position-y: -380px;
+    background-image: url(../images/header_bg1.png);
+ }.head2{
+    transition: var(--delay-header-img);
+    background-image: url(../images/header_bg2.png);
+ }
+ .header-content{
     margin-left: auto;
     margin-right: auto;
     display: table;
@@ -407,4 +419,8 @@
     }.title-skill{
         bottom: -3rem;
     }
+
+    .head1{
+        background-position-y: 0px;
+     }
 }
