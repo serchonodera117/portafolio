@@ -283,9 +283,11 @@
      <a class="div-card-body" data-bs-toggle="modal" data-bs-target="#Modal-projects" v-for="(project,index) in cardInfo" 
      v-bind:key="project" @click="setproject(index)">
         <div class="project-img-container">
-            <div class="inner-textimg-container"><span class="inner-text-img">
-                See more
-            </span></div>
+            <div class="inner-textimg-container">
+            </div>
+            <span class="inner-text-img">
+              See more
+            </span>
             <img class="project-image" alt="img_project.png" :src="project.p_img">
         </div>
         <hr>

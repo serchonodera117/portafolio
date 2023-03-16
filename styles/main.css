@@ -173,21 +173,19 @@
     filter: grayscale(1);
     opacity: 1
 }
-.inner-textimg-container:hover .inner-text-img{
-    display: table;
+.div-card-body:hover .inner-text-img{
     opacity: 1;
-
 }
 .inner-text-img{
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
+    margin-left: 37%;
+    margin-right:37%;
+    position: absolute;
     margin-top: 9rem;
     opacity: 0;
     transition: 0.5s ease-in;
     text-decoration: underline;
-    color: white;
-    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
 }
 .div-description{
     margin-top: 0px;
