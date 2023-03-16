@@ -38,6 +38,7 @@
     background-position-y: -380px;
     background-image: url(../images/header_bg1.png);
  }.head2{
+    background-position-y: -380px;
     transition: var(--delay-header-img);
     background-image: url(../images/header_bg2.png);
  }
@@ -420,7 +421,7 @@
         bottom: -3rem;
     }
 
-    .head1{
+    .head1, .head2{
         background-position-y: 0px;
      }
 }
