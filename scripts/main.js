@@ -29,10 +29,11 @@ let myApp = {
                     name:"GPS application",
                     p_img:"images/projets/Kotlin-gps-app/01.png",
                     technology:"images/projets/Icon-tech/kotlin.png",
-                },{
+                },
+                {
                   name: "myYTRequest",
                   p_img:"images/projets/myYTR_cshar/ytr_0.png",
-                  technology:"images/projets/Icon-tech/sechar.png",
+                  technology:"images/projets/Icon-tech/sechar.png"
                 },
                 {
                     name: "Sales page",
@@ -261,37 +262,44 @@ let myApp = {
                 {
                   title: 'myYTRequest',
                   slide_indicator: `
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                   `,
                   images: `
                   <div class="carousel-item active">
-                      <img src="images/projets/myYTR_cshar/ytr_0.png" class="d-block w-100 image-carousel" alt="...">
+                  <img src="images/projets/myYTR_cshar/ytr_0.png" class="d-block w-100 image-carousel" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="images/projets/myYTR_cshar/ytr_1.png" class="d-block w-100 image-carousel" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="images/projets/myYTR_cshar/ytr_2.png" class="d-block w-100 image-carousel" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="images/projets/myYTR_cshar/ytr_3.png" class="d-block w-100 image-carousel" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="images/projets/myYTR_cshar/ytr_4.png" class="d-block w-100 image-carousel" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="images/projets/myYTR_cshar/ytr_5.png" class="d-block w-100 image-carousel" alt="...">
                   </div>
                   `,
-
                   description: `
                   <p><b>Description:</b>A desktop app for windows<br><br>
                   this is an app designed and created for download files .mp4 and mp3 for Yutube.<br><br>
-                  features: is responsive<br><br>
+                  features: <br>
+                  <ul>
+                    <li>Chose the path of the folder you want to use for your download</li>
+                    <li>The folder path is saved automatically when click the folder icon</li>
+                    <li>Preview of the video you want to search</li>
+                    <li>Download the vido you want</li>
+                    <li>Convert the video you want to audio</li>
+                  <ul>
                   </p>
                   <div id="content-buton-project">
                   <a class="button-go" onclick="open('https://github.com/serchonodera117/myYTRequesr','Project','height=700,width=700')">
