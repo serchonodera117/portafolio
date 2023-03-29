@@ -291,7 +291,7 @@ let myApp = {
                   `,
                   description: `
                   <p><b>Description:</b>A desktop app for windows<br><br>
-                  this is an app designed and created for download files .mp4 and mp3 for Yutube.<br><br>
+                  this is an app designed and created to download files .mp4 and mp3 from Youtube.<br><br>
                   features: <br>
                   <ul>
                     <li>Chose the path of the folder you want to use for your download</li>
