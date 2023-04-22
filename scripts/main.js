@@ -605,7 +605,7 @@ let myApp = {
             sliderIndicator.innerHTML = this.selected_project[index].slide_indicator
             images.innerHTML = this.selected_project[index].images
             description.innerHTML = this.selected_project[index].description
-            console.log("your index is", index)
+            // console.log("your index is", index)
         },
         wsp_contact(){
             let url="https://api.whatsapp.com/send?phone=+523122282017&text=Hola, buen día...";
@@ -630,7 +630,7 @@ let myApp = {
             let url= "https://myfavnime.000webhostapp.com/contact/contact.php?";
             let progressBar= document.getElementById("progressBar");
             progressBar.style.display = 'block';
-            console.log(data);
+            // console.log(data);
             fetch(url , {
                method: 'POST',
                body: JSON.stringify(data),
@@ -668,7 +668,7 @@ let myApp = {
              this.search_array = []
 
              this.searchInProjects(busqueda);
-             
+
           }else{
             radio.checked 
             this.section = this.sectionBackup 
@@ -693,7 +693,7 @@ let myApp = {
               anyObject.anyTechIMG = this.cardInfo[i].technology
               anyObject.anyDescription = ''
               this.search_array.push(anyObject);
-              console.log(anyObject)
+              // console.log(anyObject)
             }
            }
          },
