@@ -8,52 +8,64 @@ let myApp = {
                 message:''
             },
             section: 1, //default
+            sectionBackup: 1,
             notValidData: false,
+            searchBy: '', //search anything about technology, experience or a project
+            buscando: false,
             cardInfo:[
                 {
                     name:"Gisselle's Adventure",
                     p_img:"images/projets/gisselles-adventure/01.PNG",
                     technology:"images/projets/Icon-tech/godot.png",
+                    language_or_technology: 'Godot script'
                 },
                 {
                     name:"myFavnime",
                     p_img:"images/projets/javascript-my-favnime/01.PNG",
                     technology:"images/projets/Icon-tech/js.png",
+                    language_or_technology: 'HTML JavaScript CSS'
                 },
                 {
                     name:"Sales app",
                     p_img:"images/projets/Kotlin-sales-app/0q.PNG",
                     technology:"images/projets/Icon-tech/kotlin.png",
+                    language_or_technology: 'Kotlin PHP'
                 },
                 {
                     name:"GPS application",
                     p_img:"images/projets/Kotlin-gps-app/01.png",
                     technology:"images/projets/Icon-tech/kotlin.png",
+                    language_or_technology: 'Kotlin'
                 },
                 {
                   name: "myYTRequest",
                   p_img:"images/projets/myYTR_cshar/ytr_0.png",
-                  technology:"images/projets/Icon-tech/sechar.png"
+                  technology:"images/projets/Icon-tech/sechar.png",
+                  language_or_technology: 'C#'
                 },
                 {
                     name: "Sales page",
                     p_img:"images/projets/prototype-html-servicios/01.PNG",
                     technology:"images/projets/Icon-tech/js.png",
+                    language_or_technology: 'HTML JavaScript CSS'
                 },
                 {
                     name: "Local Crud nosql",
                     p_img:"images/projets/Raxor/00.PNG",
                     technology:"images/projets/Icon-tech/Blazor.png",
+                    language_or_technology: 'C# Razor'
                 },
                 {
                     name: "Display numbers",
                     p_img:"images/projets/chalenge_cshar/00.PNG",
                     technology:"images/projets/Icon-tech/sechar.png",
+                    language_or_technology: 'C#'
                 },
                 {
                     name: "myFavnive Mobile",
                     p_img:"images/projets/ReactNative/00.PNG",
                     technology:"images/projets/Icon-tech/reactnative.png",
+                    language_or_technology: 'ReactNative Javascript'
                 }
             ],
             selected_project:[
@@ -578,7 +590,8 @@ let myApp = {
             name: 'Hardworking',
             img:'images/projets/Icon-sft-skills/hard_working.png'
           }
-          ]
+          ],
+          search_array: []
         }
     }, 
     methods:{
@@ -643,7 +656,47 @@ let myApp = {
          checkAsunto(asunto){return (asunto.trim()==='')?false : true;},
          menuChange(value){
           this.section = value;
-         }
+          this.sectionBackup = value;
+         },
+         searchSomething(){
+          let radio = document.querySelectorAll('input[name="option"]');
+           if(this.searchBy.trim()){
+             this.section = 0
+             radio[this.sectionBackup-1].checked = false
+             let busqueda = this.searchBy.toLowerCase()
+             this.buscando =  true
+             this.search_array = []
+
+             this.searchInProjects(busqueda);
+             
+          }else{
+            radio.checked 
+            this.section = this.sectionBackup 
+            radio[this.sectionBackup-1].checked = true
+            this.buscando =  false
+          }
+         },
+         searchInProjects(busqueda){
+          let p = 0
+          for(let i = 0; i < this.cardInfo.length; i++){
+            let anyName = this.cardInfo[i].name.toLowerCase()
+            let anyTech = this.cardInfo[i].language_or_technology.toLowerCase()
+            if(anyName.match(busqueda) || anyTech.match(busqueda)){
+              let anyObject = {
+                anyName:'',
+                anyImage:'',
+                anyTechIMG:'',
+                anyDescription:'',
+               }
+              anyObject.anyName = this.cardInfo[i].name
+              anyObject.anyImage = this.cardInfo[i].p_img
+              anyObject.anyTechIMG = this.cardInfo[i].technology
+              anyObject.anyDescription = ''
+              this.search_array.push(anyObject);
+              console.log(anyObject)
+            }
+           }
+         },
     }
 }
 let buildApp = Vue.createApp(myApp).mount('#app');
