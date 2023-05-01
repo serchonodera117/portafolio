@@ -15,9 +15,10 @@ let myApp = {
          
             project_cards:[
                 {
-                    name:"Gisselle's Adventure",
+                    name:"Gisselle's Adventure",          //--- standard for other kind of cards
                     p_img:"images/projets/gisselles-adventure/01.PNG",
                     technology:"images/projets/Icon-tech/godot.png",
+
                     language_or_technology: 'Godot script',
                     title:"Gisselle's Adventure",
                     slide_indicator:`
