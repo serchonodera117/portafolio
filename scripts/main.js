@@ -589,7 +589,7 @@ let myApp = {
             sliderIndicator.innerHTML = this.project_cards[index].slide_indicator
             images.innerHTML = this.project_cards[index].images
             description.innerHTML = this.project_cards[index].description
-            console.log("your index is", index)
+            // console.log("your index is", index)
         },
         setSearchedCardModal(obj){
           let {title, imagesCarousel, slide_indicator ,description} = obj;
