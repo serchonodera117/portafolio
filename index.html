@@ -201,7 +201,15 @@
      <!--Search Cards-->
    <div id="div-Searched_cards"  class="cards-container area" v-if="buscando">
     <a class="div-card-body"  v-for="(searched,index) in search_array" 
-    v-bind:key="searched"><!--data-bs-toggle="modal" data-bs-target="#Modal-projects"*/-->
+    data-bs-toggle="modal" data-bs-target="#Modal-projects"
+    v-bind:key="searched"
+     @click="setSearchedCardModal({
+      'title': searched.anyName, 
+      'imagesCarousel': searched.anyCarouselImages,
+      'slide_indicator': searched.anySlideIndicator, 
+      'description': searched.anyDescription, 
+
+      })"> <!--*/-->
        <div class="project-img-container">
            <div class="inner-textimg-container">
            </div>
@@ -300,7 +308,7 @@
 
       <!--PROJECT CARDS-->
     <div id="div-projects" class="cards-container area" v-if="section==2">
-     <a class="div-card-body" data-bs-toggle="modal" data-bs-target="#Modal-projects" v-for="(project,index) in cardInfo" 
+     <a class="div-card-body" data-bs-toggle="modal" data-bs-target="#Modal-projects" v-for="(project,index) in project_cards" 
      v-bind:key="project" @click="setproject(index)">
         <div class="project-img-container">
             <div class="inner-textimg-container">

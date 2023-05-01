@@ -12,64 +12,13 @@ let myApp = {
             notValidData: false,
             searchBy: '', //search anything about technology, experience or a project
             buscando: false,
-            cardInfo:[
+         
+            project_cards:[
                 {
                     name:"Gisselle's Adventure",
                     p_img:"images/projets/gisselles-adventure/01.PNG",
                     technology:"images/projets/Icon-tech/godot.png",
-                    language_or_technology: 'Godot script'
-                },
-                {
-                    name:"myFavnime",
-                    p_img:"images/projets/javascript-my-favnime/01.PNG",
-                    technology:"images/projets/Icon-tech/js.png",
-                    language_or_technology: 'HTML JavaScript CSS'
-                },
-                {
-                    name:"Sales app",
-                    p_img:"images/projets/Kotlin-sales-app/0q.PNG",
-                    technology:"images/projets/Icon-tech/kotlin.png",
-                    language_or_technology: 'Kotlin PHP'
-                },
-                {
-                    name:"GPS application",
-                    p_img:"images/projets/Kotlin-gps-app/01.png",
-                    technology:"images/projets/Icon-tech/kotlin.png",
-                    language_or_technology: 'Kotlin'
-                },
-                {
-                  name: "myYTRequest",
-                  p_img:"images/projets/myYTR_cshar/ytr_0.png",
-                  technology:"images/projets/Icon-tech/sechar.png",
-                  language_or_technology: 'C#'
-                },
-                {
-                    name: "Sales page",
-                    p_img:"images/projets/prototype-html-servicios/01.PNG",
-                    technology:"images/projets/Icon-tech/js.png",
-                    language_or_technology: 'HTML JavaScript CSS'
-                },
-                {
-                    name: "Local Crud nosql",
-                    p_img:"images/projets/Raxor/00.PNG",
-                    technology:"images/projets/Icon-tech/Blazor.png",
-                    language_or_technology: 'C# Razor'
-                },
-                {
-                    name: "Display numbers",
-                    p_img:"images/projets/chalenge_cshar/00.PNG",
-                    technology:"images/projets/Icon-tech/sechar.png",
-                    language_or_technology: 'C#'
-                },
-                {
-                    name: "myFavnive Mobile",
-                    p_img:"images/projets/ReactNative/00.PNG",
-                    technology:"images/projets/Icon-tech/reactnative.png",
-                    language_or_technology: 'ReactNative Javascript'
-                }
-            ],
-            selected_project:[
-                {
+                    language_or_technology: 'Godot script',
                     title:"Gisselle's Adventure",
                     slide_indicator:`
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -127,6 +76,10 @@ let myApp = {
                     `
                 },
                 {
+                    name:"myFavnime",
+                    p_img:"images/projets/javascript-my-favnime/01.PNG",
+                    technology:"images/projets/Icon-tech/js.png",
+                    language_or_technology: 'HTML JavaScript CSS',
                     title: 'myFavnime',
                     slide_indicator:`
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -166,6 +119,10 @@ let myApp = {
                     `,
                 },
                 {
+                    name:"Sales app",
+                    p_img:"images/projets/Kotlin-sales-app/0q.PNG",
+                    technology:"images/projets/Icon-tech/kotlin.png",
+                    language_or_technology: 'Kotlin PHP',
                     title: 'Sales App',
                     slide_indicator:`
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -233,6 +190,10 @@ let myApp = {
                     `
                 },
                 {
+                    name:"GPS application",
+                    p_img:"images/projets/Kotlin-gps-app/01.png",
+                    technology:"images/projets/Icon-tech/kotlin.png",
+                    language_or_technology: 'Kotlin',
                     title: 'Gps search app',
                     slide_indicator:`
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -272,6 +233,10 @@ let myApp = {
                     `,
                 },
                 {
+                  name: "myYTRequest",
+                  p_img:"images/projets/myYTR_cshar/ytr_0.png",
+                  technology:"images/projets/Icon-tech/sechar.png",
+                  language_or_technology: 'C#',
                   title: 'myYTRequest',
                   slide_indicator: `
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -324,6 +289,10 @@ let myApp = {
                   `
                 },
                 {
+                    name: "Sales page",
+                    p_img:"images/projets/prototype-html-servicios/01.PNG",
+                    technology:"images/projets/Icon-tech/js.png",
+                    language_or_technology: 'HTML JavaScript CSS',
                     title: 'Sales page',
                     slide_indicator:`
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -374,6 +343,10 @@ let myApp = {
                     `,
                 },
                 {
+                    name: "Local Crud nosql",
+                    p_img:"images/projets/Raxor/00.PNG",
+                    technology:"images/projets/Icon-tech/Blazor.png",
+                    language_or_technology: 'C# Razor',
                     title: 'Blazor local crud',
                     slide_indicator:`
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -398,6 +371,10 @@ let myApp = {
                     `,
                 },
                 {
+                  name: "Display numbers",
+                  p_img:"images/projets/chalenge_cshar/00.PNG",
+                  technology:"images/projets/Icon-tech/sechar.png",
+                  language_or_technology: 'C#',
                     title: 'Display numbers',
                     slide_indicator: `
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -431,7 +408,12 @@ let myApp = {
                     </a>
                     </div>
                     `,
-                },{
+                },
+                {
+                    name: "myFavnive Mobile",
+                    p_img:"images/projets/ReactNative/00.PNG",
+                    technology:"images/projets/Icon-tech/reactnative.png",
+                    language_or_technology: 'ReactNative Javascript',
                     title: 'myFavnime Mobile',
                     slide_indicator: `
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -456,6 +438,7 @@ let myApp = {
                     `,
                 }
             ],
+
             hard_skills: [
               {
                 name: 'English',
@@ -601,12 +584,26 @@ let myApp = {
             let sliderIndicator = document.getElementById("carousel-btn-indicators");
             let description = document.getElementById("cuerpo-texto");
 
-            title.innerText = this.selected_project[index].title
-            sliderIndicator.innerHTML = this.selected_project[index].slide_indicator
-            images.innerHTML = this.selected_project[index].images
-            description.innerHTML = this.selected_project[index].description
-            // console.log("your index is", index)
+            title.innerText = this.project_cards[index].title
+            sliderIndicator.innerHTML = this.project_cards[index].slide_indicator
+            images.innerHTML = this.project_cards[index].images
+            description.innerHTML = this.project_cards[index].description
+            console.log("your index is", index)
         },
+        setSearchedCardModal(obj){
+          let {title, imagesCarousel, slide_indicator ,description} = obj;
+
+          let modalTitle = document.getElementById("selected-ptoject");
+          let modalImages = document.getElementById("photos-project");
+          let modalSliderIndicator = document.getElementById("carousel-btn-indicators");
+          let modalDescription = document.getElementById("cuerpo-texto");
+
+          modalTitle.innerText = title;
+          modalDescription.innerHTML = description;
+          modalImages.innerHTML =  imagesCarousel;
+          modalSliderIndicator.innerHTML = slide_indicator                  
+        }
+        ,
         wsp_contact(){
             let url="https://api.whatsapp.com/send?phone=+523122282017&text=Hola, buen día...";
             let newWin = open(url,'whatsapp', 'height=700, width=700');
@@ -678,20 +675,24 @@ let myApp = {
          },
          searchInProjects(busqueda){
           let p = 0
-          for(let i = 0; i < this.cardInfo.length; i++){
-            let anyName = this.cardInfo[i].name.toLowerCase()
-            let anyTech = this.cardInfo[i].language_or_technology.toLowerCase()
+          for(let i = 0; i < this.project_cards.length; i++){
+            let anyName = this.project_cards[i].name.toLowerCase()
+            let anyTech = this.project_cards[i].language_or_technology.toLowerCase()
             if(anyName.match(busqueda) || anyTech.match(busqueda)){
               let anyObject = {
                 anyName:'',
                 anyImage:'',
+                anyCarouselImages:'',
+                anySlideIndicator:'',
                 anyTechIMG:'',
                 anyDescription:'',
                }
-              anyObject.anyName = this.cardInfo[i].name
-              anyObject.anyImage = this.cardInfo[i].p_img
-              anyObject.anyTechIMG = this.cardInfo[i].technology
-              anyObject.anyDescription = ''
+              anyObject.anyName = this.project_cards[i].name
+              anyObject.anyImage = this.project_cards[i].p_img
+              anyObject.anyCarouselImages = this.project_cards[i].images
+              anyObject.anySlideIndicator = this.project_cards[i].slide_indicator
+              anyObject.anyTechIMG = this.project_cards[i].technology
+              anyObject.anyDescription = this.project_cards[i].description
               this.search_array.push(anyObject);
               // console.log(anyObject)
             }
