@@ -475,7 +475,7 @@
     border-top-left-radius:  10px;
 }
 @media only screen and (max-width: 490px){
-    .div-card-body,.inner-textimg-container{
+    .div-card-body,.inner-textimg-container, .card_experience_body{
       width: var(--card-mobile-x);
     }.radio-btn li{
         font-size: 12px;
