@@ -138,7 +138,7 @@
 
 }
 
-/*------Cards*/
+/*-----------------ProjectCards*/
 .area{
     transition: 0.5s ease-in;
 }
@@ -228,6 +228,66 @@
     padding: 5px;
     margin-top: -10px
 }
+/*------------------------------------------------experience cards*/
+.card_experience_body{
+    height: var(--card-desktop-y);
+    width: var(--card-desktop-x);
+    margin: 1rem;
+    float:left;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 3px  7px 10px 3px rgb(208, 194, 194);    
+    transition: 0.3s ease-in-out;
+}
+.card_experience_body:hover {
+    scale: 1.02;
+    transform: translateY(-5px);
+    box-shadow: 7px  14px 10px 3px rgba(219, 240, 133, 0.764);    
+    background-color: rgb(252, 242, 242);
+}.card_experience_body:hover .exp-inner-textimg-container{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.427);
+    backdrop-filter: blur(3px);
+    filter: grayscale(1);
+    opacity: 1
+}.card_experience_body:hover .exp-inner-text-img{
+    opacity: 1;
+}
+
+.experience-image{
+    width: 100%;
+    height: 20rem;
+    transition: 0.5s ease-in;
+    object-fit: cover;
+    margin-bottom: -10px;
+    border-radius:  0px 0px 0px 0px;
+}
+.exp-inner-textimg-container{
+    width: var(--card-desktop-x);
+    min-height: 20rem;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+    height: 3rem;
+    position: absolute;
+}
+
+.experience-image:hover{
+   filter: blur(3px) grayscale(1);
+   scale: 0.80;
+}
+
+.exp-inner-text-img{
+    margin-left: 37%;
+    margin-right:37%;
+    position: absolute;
+    margin-top: 9rem;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
 
 /*MODALES*/
 /*modal project img*/
@@ -349,7 +409,7 @@
     transform: translateY(5px);
 }
 
-/*------ABOUT ME*/
+/*-----------------ABOUT ME*/
 
 .centered-text{text-align: center;}
 .justified-text{text-align: justify;}

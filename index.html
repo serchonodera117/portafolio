@@ -53,8 +53,41 @@
           </div>
         </div>
       </div>
+      
+          <!--MODAL EXPERIENCE-->
+    <div class="modal fade" id="Modal-exp" width="27.5rem" height="67rem" tabindex="-1" 
+    aria-labelledby="Modal-exp" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="selected-exp">Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="container-modal">
+                  <div id="exp_carouselExampleIndicators"  class="carousel slide" data-bs-ride="true">
+                      <div id="exp_carousel-btn-indicators" class="carousel-indicators"></div>
+                      <div id="exp_photos" class="carousel-inner">
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#exp_carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#exp_carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                  </div>  
+         </div>
+                   <div id="cuerpo-texto-exp">
+                  </div> 
+              <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+        </div>
+      </div>
+    </div>
 
-      <!--modal de gmail-->
+      <!--MODAL DE GMAIL-->
   <div class="modal fade" id="ModalGmail" tabindex="-1" aria-labelledby="ModalGmail" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -325,14 +358,29 @@
           </div>
      </a>   
     </div>
-    <!--Certifications-->
+    <!--CERTOFOCATIOND-->
     <div id="div-certifications" class="area" v-if="section==3">
       certifications
     </div>
 
-     <!--Experience-->
-     <div id="div-experience" class="area" v-if="section==4">
-      experience
+     <!--EXPERIENCE-->
+     <div id="div-experience"  class="cards-container area" v-if="section==4">
+       <a class="card_experience_body"   data-bs-toggle="modal" data-bs-target="#Modal-exp"
+            @click="set_experience(index)" v-for="(exp,index) in experience_cards" :key="index">
+          <div class="exp-img-container">
+            <div class="exp-inner-textimg-container">
+            </div>
+            <span class="exp-inner-text-img">
+              See more
+            </span>
+            <img class="experience-image" alt="img_exp.png" :src="exp.exp_img">
+        </div>
+        <hr>
+        <div class="div-description">
+            <img class="img-techtnology-project" :src="exp.institution_logo">
+            {{exp.position}}
+          </div>
+       </a>
      </div>
 
      <hr>

@@ -7,7 +7,7 @@ let myApp = {
                 email:'',
                 message:''
             },
-            section: 1, //default
+            section: 1, //1 default
             sectionBackup: 1,
             notValidData: false,
             searchBy: '', //search anything about technology, experience or a project
@@ -440,6 +440,64 @@ let myApp = {
                 }
             ],
 
+            experience_cards:[
+              {
+              position:'Front end Developer in Educ',
+              exp_img:'images/exp/educ/educ_logo.png',
+              institution_logo:'images/exp/educ/universidad_de_colima.png',
+              institution_name:'Dirección de educación a Distancia de la universidad de Colima',
+              slide_indicator:`
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+              `,
+              images:`
+                 <div class="carousel-item active">
+                  <img src="images/exp/educ/educ_logo_page.png" class="d-block w-100 image-carousel" alt="...">
+               </div>
+               <div class="carousel-item">
+                <img src="images/exp/educ/colaboradores_educ.png" class="d-block w-100 image-carousel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/exp/educ/interface_educ.png" class="d-block w-100 image-carousel" alt="...">
+              </div>
+                <div class="carousel-item">
+                <img src="images/exp/educ/interface_educ2.png" class="d-block w-100 image-carousel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/exp/educ/interface_educ3.png" class="d-block w-100 image-carousel" alt="...">
+              </div>
+              `,
+              description:`
+               <p style="margin-left: auto; margin-right: auto; display: table; font-size:22"><b>Dirección de Educación a distancia de la Universidad de Colima</b></p>
+               <br>
+               <p><b>Description:</b> This is a platform to provide remote education created by Universidad de Colima. 
+               My contract: profesional practices. </p>
+                <p>
+                    My role was Front-end developer with the following technologies: 
+                </p>
+                 <ul>
+                 <li>Vue2</li>
+                 <li>JavaScript</li>
+                 <li>Html</li>
+                 <li>Php</li>
+                 <li>Css bootstrap, docker</li>
+                 <li>docker</li>
+                 <li>bootstrap</li>
+                 </ul>
+
+                  <p>
+                    Most part of my profesional practices was about developing new modules for the platform
+                    like an historial or a kind of admin mode, and provide maintenance for the platorm
+                  </p>
+              `,
+            }
+          ],
+
+
             hard_skills: [
               {
                 name: 'English',
@@ -590,6 +648,19 @@ let myApp = {
             images.innerHTML = this.project_cards[index].images
             description.innerHTML = this.project_cards[index].description
             // console.log("your index is", index)
+        },
+        set_experience(index){
+          let title = document.getElementById("selected-exp");
+          let images = document.getElementById("exp_photos");
+          let sliderIndicator = document.getElementById("exp_carousel-btn-indicators");
+          let description = document.getElementById("cuerpo-texto-exp");
+          
+          title.innerText = this.experience_cards[index].position
+          sliderIndicator.innerHTML = this.experience_cards[index].slide_indicator
+          images.innerHTML = this.experience_cards[index].images
+          description.innerHTML = this.experience_cards[index].description
+
+          console.log(title, sliderIndicator,images,description)
         },
         setSearchedCardModal(obj){
           let {title, imagesCarousel, slide_indicator ,description} = obj;
