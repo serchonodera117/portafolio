@@ -638,7 +638,7 @@ let myApp = {
             {
               name:'Winner of Game 4 Empowerment',
               img:'images/certifications/Reconocimiento_G4E_2022_Ganadores-GARCIA_MICHEL_SERGIO.png',
-              description:"I developed a serious videogame using godot script"
+              description:"my game 'Gisselles Adventure', won as the best contribution "
             },
             {
               name:'Competitor of Game 4 Empowerment',

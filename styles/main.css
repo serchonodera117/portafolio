@@ -392,7 +392,7 @@
     border-radius: 0 0 10px 10px;
     width: 50rem;
     height: 35rem;
-    margin-bottom: -1rem;
+    margin-bottom: 0rem;
 }
 .header_certification{
     background-color: rgba(20, 7, 103, 0.872);
@@ -560,7 +560,7 @@
     border-top-left-radius:  10px;
 }
 @media only screen and (max-width: 490px){
-    .div-card-body,.inner-textimg-container, .card_experience_body{
+    .div-card-body,.inner-textimg-container, .card_experience_body, .card_certification_body{
       width: var(--card-mobile-x);
     }.radio-btn li{
         font-size: 12px;
@@ -573,6 +573,10 @@
     }.title-skill{
         bottom: -3rem;
     }
+    .modal_certification, .img_certified_modal{
+        width: 18rem !important;
+        height: 13rem !important;
+      }
 
     .head1, .head2{
         background-position-y: 0px;
@@ -582,4 +586,8 @@
     .head1, .head2,.head3,.head4{
         background-position-y: 0px;
      }
+     .modal_certification, .img_certified_modal{
+        width: 30rem !important;
+        height: 20rem !important;
+      }
 }
