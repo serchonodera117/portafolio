@@ -146,6 +146,27 @@
             </div>
             </div>
         </div>
+        
+        <!-- MODAL CERTIFICATIONS -->
+        <div class="modal fade" id="modalCertifications" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
     <!--Buttons------------------------------------------------------------->
      <div class="div-container-botones">
@@ -246,7 +267,7 @@
        <div class="project-img-container">
            <div class="inner-textimg-container">
            </div>
-           <span class="inner-text-img">
+           <span class="certified-inner-text">
              See more
            </span>
            <img class="project-image" alt="img_project.png" :src="searched.anyImage">
@@ -358,9 +379,25 @@
           </div>
      </a>   
     </div>
-    <!--CERTOFOCATIOND-->
-    <div id="div-certifications" class="area" v-if="section==3">
-      certifications
+    <!--CERTOFOCATIONS-->
+    <div id="div-certifications" class="cards-container area" v-if="section==3">
+       <a class="card_certification_body" v-for="(certified, index) in certifications_cards" :key="index" 
+        data-bs-toggle="modal" data-bs-target="#modalCertifications">
+         <div clas="certified-img-container">
+            <div class="certified-inner-text-container"></div>
+            <span class="certified-inner-text-img">
+              see more
+            </span>
+            <img class="certified-image" :src="certified.img">
+         </div>
+         <hr>
+         <div>
+          <label style="margin-left: auto; margin-right: auto; 
+          display: table;">
+            {{certified.name}}
+          </label>
+         </div>
+      </a>
     </div>
 
      <!--EXPERIENCE-->

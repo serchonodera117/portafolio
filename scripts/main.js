@@ -7,7 +7,7 @@ let myApp = {
                 email:'',
                 message:''
             },
-            section: 1, //1 default
+            section: 3, //1 default
             sectionBackup: 1,
             notValidData: false,
             searchBy: '', //search anything about technology, experience or a project
@@ -632,6 +632,19 @@ let myApp = {
             name: 'Hardworking',
             img:'images/projets/Icon-sft-skills/hard_working.png'
           }
+          ],
+
+          certifications_cards:[
+            {
+              name:'Winner of Game 4 Empowerment',
+              img:'images/certifications/Reconocimiento_G4E_2022_Ganadores-GARCIA_MICHEL_SERGIO.png',
+              description:""
+            },
+            {
+              name:'Competitor of Game 4 Empowerment',
+              img:'images/certifications/Reconocimiento_G4E_2022_Participantes-GARCIA_MICHEL_SERGIO.png',
+              description:""
+            }
           ],
           search_array: []
         }
