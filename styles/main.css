@@ -560,7 +560,7 @@
     border-top-left-radius:  10px;
 }
 @media only screen and (max-width: 490px){
-    .div-card-body,.inner-textimg-container, .card_experience_body, .card_certification_body{
+    .div-card-body, .certified-inner-text-container,.inner-textimg-container, .card_experience_body, .card_certification_body{
       width: var(--card-mobile-x);
     }.radio-btn li{
         font-size: 12px;
@@ -573,9 +573,9 @@
     }.title-skill{
         bottom: -3rem;
     }
-    .modal_certification, .img_certified_modal,.container_description{
-        width: 18rem !important;
-        height: 13rem !important;
+    .modal_certification, .img_certified_modal,.container_description, .exp-inner-textimg-container{
+        width: 10rem !important;
+        height: 7rem !important;
       }
 
     .head1, .head2{
