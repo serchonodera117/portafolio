@@ -322,6 +322,7 @@
 
 /*MODALES*/
 /*modal project img*/
+
 .image-carousel{
     object-fit:scale-down;
     width: 26rem;
@@ -372,7 +373,60 @@
     width: 100%;
     height: 100%;
 }
-/*Nav-menu*/
+
+/*----- MODAL OF CERTIFICATIONS */
+.modal_bacdrop{
+    background-color: rgba(28, 5, 63, 0.137);
+    backdrop-filter: blur(5px);
+}
+
+.modal_certification{
+    width: 50rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: table !important;
+    padding: 0px !important;
+}
+.img_certified_modal{
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+    width: 50rem;
+    height: 35rem;
+    margin-bottom: -1rem;
+}
+.header_certification{
+    background-color: rgba(20, 7, 103, 0.872);
+    color: white;
+}
+.container_description{
+    width: 50rem;
+    position: absolute;
+    opacity: 1;
+    height: 35rem;
+    border-radius: 0 0 10px 10px;
+    transition: 0.3s ease-in-out;
+}
+.modal-content:hover .container_description{
+    background-color: #020418bd;
+    backdrop-filter: blur(5px);
+}
+.certification_description{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 7rem;
+    font-size: 18px;
+    display: table;
+    transition: 0.3s ease-in;
+    display: table;
+    position: relative;
+    color:white;
+    opacity: 0;
+    position: absolute;
+}
+.modal-content:hover .certification_description{
+    opacity: 1;
+}
+/*----------NAV-MENU*/
 .nav-container{
     width:99%;
     height: 4rem;

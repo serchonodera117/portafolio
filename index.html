@@ -23,9 +23,12 @@
        </header>    
     
     <!--MODAL PEOJECT-->
-    <div class="modal fade" id="Modal-projects" width="27.5rem" height="67rem" tabindex="-1" aria-labelledby="Modal-projects" aria-hidden="true">
+    <div class="modal fade modal_bacdrop" id="Modal-projects" width="27.5rem" height="67rem" tabindex="-1" aria-labelledby="Modal-projects" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content" style="
+          border-radius: 10px;
+            box-shadow: 0 2px 10px 3px rgba(30, 23, 218, 0.747) !important
+          ">
             <div class="modal-header">
               <h5 class="modal-title" id="selected-ptoject">Title</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -55,10 +58,12 @@
       </div>
       
           <!--MODAL EXPERIENCE-->
-    <div class="modal fade" id="Modal-exp" width="27.5rem" height="67rem" tabindex="-1" 
+    <div class="modal fade modal_bacdrop" id="Modal-exp" width="27.5rem" height="67rem" tabindex="-1" 
     aria-labelledby="Modal-exp" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content" style="
+          border-radius: 10px;
+            box-shadow: 0 2px 10px 3px rgba(243, 247, 53, 0.674) !important">
           <div class="modal-header">
             <h5 class="modal-title" id="selected-exp">Title</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -88,9 +93,11 @@
     </div>
 
       <!--MODAL DE GMAIL-->
-  <div class="modal fade" id="ModalGmail" tabindex="-1" aria-labelledby="ModalGmail" aria-hidden="true">
+  <div class="modal fade modal_bacdrop" id="ModalGmail" tabindex="-1" aria-labelledby="ModalGmail" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content" style="
+        border-radius: 10px;
+            box-shadow: 0 2px 10px 5px rgba(236, 206, 255, 0.747) !important">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Contact by Gmail</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -148,19 +155,20 @@
         </div>
         
         <!-- MODAL CERTIFICATIONS -->
-        <div class="modal fade" id="modalCertifications" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade modal_bacdrop" id="modalCertifications" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" style="margin-left: auto; margin-right: auto; display:table; border-radius: 10px;
+            box-shadow: 0 2px 7px 5px rgba(134, 117, 169, 0.747);
+            ">
+            <div class="modal-content modal_certification">
+              <div class="modal-header header_certification">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{modal_certifications_data.name}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white"></button>
               </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+              <div class="modal-body" style="padding: 0;">
+                <div class="container_description">
+                </div>
+                <spam class="certification_description">{{modal_certifications_data.description}}</spam>
+                <img class="img_certified_modal" :src="modal_certifications_data.img">
               </div>
             </div>
           </div>
@@ -382,7 +390,13 @@
     <!--CERTOFOCATIONS-->
     <div id="div-certifications" class="cards-container area" v-if="section==3">
        <a class="card_certification_body" v-for="(certified, index) in certifications_cards" :key="index" 
-        data-bs-toggle="modal" data-bs-target="#modalCertifications">
+        data-bs-toggle="modal" data-bs-target="#modalCertifications"
+        @click="showModalCertifications({
+          'name': certified.name,
+          'img': certified.img,
+          'description': certified.description
+        })"
+        >
          <div clas="certified-img-container">
             <div class="certified-inner-text-container"></div>
             <span class="certified-inner-text-img">

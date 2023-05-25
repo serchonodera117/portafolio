@@ -638,18 +638,24 @@ let myApp = {
             {
               name:'Winner of Game 4 Empowerment',
               img:'images/certifications/Reconocimiento_G4E_2022_Ganadores-GARCIA_MICHEL_SERGIO.png',
-              description:""
+              description:"I developed a serious videogame using godot script"
             },
             {
               name:'Competitor of Game 4 Empowerment',
               img:'images/certifications/Reconocimiento_G4E_2022_Participantes-GARCIA_MICHEL_SERGIO.png',
-              description:""
+              description:"I developed a serious videogame using godot script "
             }
           ],
+          modal_certifications_data:{
+            name:'',
+            img:'',
+            description:'',
+          },
           search_array: []
         }
     }, 
     methods:{
+ //OPENING MODALES     
         setproject(index){
             let title = document.getElementById("selected-ptoject");
             let images = document.getElementById("photos-project");
@@ -687,8 +693,16 @@ let myApp = {
           modalDescription.innerHTML = description;
           modalImages.innerHTML =  imagesCarousel;
           modalSliderIndicator.innerHTML = slide_indicator                  
-        }
-        ,
+        },
+        showModalCertifications(modal){
+          let {name, img, description} = modal;
+          this.modal_certifications_data.name = name;
+          this.modal_certifications_data.img = img;
+          this.modal_certifications_data.description = description;
+
+          console.log(modal)
+        },
+ //WAYS TO CONTACT       
         wsp_contact(){
             let url="https://api.whatsapp.com/send?phone=+523122282017&text=Hola, buen día...";
             let newWin = open(url,'whatsapp', 'height=700, width=700');
@@ -732,6 +746,7 @@ let myApp = {
                console.log(err);
             })
         },
+//VALIDATIONS
          checkName(name){return (name.trim()==='')? false : true;},
          checkGmail(gmail){return (gmail.trim()==='')? false : true;},
          checkMessage(message){return (message.trim()==='')? false : true;},
@@ -740,6 +755,7 @@ let myApp = {
           this.section = value;
           this.sectionBackup = value;
          },
+//SEARCH FUNCTIONS  
          searchSomething(){
           let radio = document.querySelectorAll('input[name="option"]');
            if(this.searchBy.trim()){
