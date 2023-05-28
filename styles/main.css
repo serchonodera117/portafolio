@@ -303,12 +303,8 @@
     height: 3rem;
     position: absolute;
     transition: 0.3s ease-in;
-}.certified-inner-text-container:hover{
-    background-color: rgba(0, 0, 0, 0.427);
-    backdrop-filter: blur(3px);
-    filter: grayscale(1);
-    opacity: 1
 }
+
 .card_certification_body:hover{
     transform: translateY(-10px);
     scale: 1.03;
@@ -318,7 +314,12 @@
 .card_certification_body:hover .certified-inner-text-img{
     opacity: 1;
 }
-
+.card_certification_body:hover .certified-inner-text-container{
+    background-color: rgba(0, 0, 0, 0.427);
+    backdrop-filter: blur(3px);
+    filter: grayscale(1);
+    opacity: 1
+}
 
 /*MODALES*/
 /*modal project img*/
