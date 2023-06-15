@@ -528,6 +528,11 @@ let myApp = {
               level:' Intermediate'
             },
             {
+              name: 'React',
+              img:'images/projets/Icon-tech/reactjs.png',
+              level: ' Intermediate'
+            },
+            {
               name: 'Adove photoshop',
               img:'images/projets/Icon-tech/ps.png',
               level:' Intermediate'
@@ -570,6 +575,11 @@ let myApp = {
             {
               name: 'SQL Workbench',
               img:'images/projets/Icon-tech/sql-workbench.png',
+              level:' Beginner'
+            },
+            {
+              name: 'C++',
+              img:'images/projets/Icon-tech/siplusplus.png',
               level:' Beginner'
             },
             {
