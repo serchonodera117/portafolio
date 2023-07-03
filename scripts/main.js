@@ -7,7 +7,7 @@ let myApp = {
                 email:'',
                 message:''
             },
-            section: 2, //1 default
+            section: 1, //1 default
             sectionBackup: 1,
             notValidData: false,
             searchBy: '', //search anything about technology, experience or a project
