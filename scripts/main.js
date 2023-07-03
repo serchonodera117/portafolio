@@ -7,7 +7,7 @@ let myApp = {
                 email:'',
                 message:''
             },
-            section: 1, //1 default
+            section: 2, //1 default
             sectionBackup: 1,
             notValidData: false,
             searchBy: '', //search anything about technology, experience or a project
@@ -77,6 +77,153 @@ let myApp = {
                     `
                 },
                 {
+                  name:"Sales app",
+                  p_img:"images/projets/Kotlin-sales-app/0q.PNG",
+                  technology:"images/projets/Icon-tech/kotlin.png",
+                  language_or_technology: 'Kotlin PHP',
+                  title: 'Sales App',
+                  slide_indicator:`
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  `,
+                  images: `
+                  <div class="carousel-item active">
+                     <img src="images/projets/Kotlin-sales-app/0q.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/02.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/03.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/04.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/05.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/06.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/07.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/08.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                  <img src="images/projets/Kotlin-sales-app/09.PNG" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  `,
+                  description: `
+                  <p><b>Description:</b> It's a final school project, is a sales app that allow to create two type of users 
+                  'seller' or 'customer'
+                  <br><br>
+                  A customer can upload his business, seller user can upload products and items into his business or enterprises 
+                  as a customer user, you can make a research of all bussiness, bussiness in your city, or make a research by name, type or city,
+                  also you can make the same type of research for any product, the app has a nav menu, and some fragments, bussiness (all, local or x type),
+                  products and services, shopping cart and a fragment to your profile, you can buy, cancel product, edit your bought before you pay, and finaly, 
+                  once time you recieve your product, you can vote it, then, other users can se the average for that product.<br><br>
+                  features: Any user can buy, comment, cancel products, add products to your shopping car, edit them and delete them,
+                  as a seller user, you can add products to your store, edit them, delete them ad hide them, finaly, both users can see the process of the sale
+                  both types of users have a record, but seller user has a record of his sales.
+                  <br><br>
+                  this project was createrd with kotlin, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
+                  </p>
+                  <div id="content-buton-project">
+                  <a class="button-go" onclick="open('https://github.com/serchonodera117/proyecto_final','Project','height=700,width=700')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  Github
+                  </a>
+                  </div>
+                  `
+                 },
+                 {
+                  name:"React to do list",
+                  p_img:"images/projets/react_todo_list/rc_0.png",
+                  technology: "images/projets/Icon-tech/reactjs.png",
+                  language_or_technology: "React js phpmyadmin, PHP and sql",
+                  title:"React to do list",
+                  slide_indicator:`
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 0"></button>
+                  `,
+                  images:`
+                  <div class="carousel-item active">
+                    <img src="images/projets/react_todo_list/rc_0.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_1.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_2.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_3.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_4.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_5.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_6.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_7.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_8.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/react_todo_list/rc_9.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  `,
+                  description:`
+                  <p><b>Description:</b> I's a personal projact created by practicing React js'
+                  <br><br>
+                  On this little platform you can create your user account and log into it to create tasks, edit and delete them
+
+                  <br><br>
+                  this project was createrd with React js, javascript, html, css, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
+                  </p>
+                  <div id="content-buton-project">
+                    <a class="button-go" onclick="open('https://serchonodera117.github.io/react_to_dp_list/build/','Project','height=700,width=700')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                      <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                    </svg>
+                    Deploy 
+                    </a>
+                    
+                  <a class="button-go" onclick="open('https://github.com/serchonodera117/react_to_dp_list','Project','height=700,width=700')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  Github
+                  </a>
+                  </div>
+                  `
+                 },
+                {
                     name:"myFavnime",
                     p_img:"images/projets/javascript-my-favnime/01.PNG",
                     technology:"images/projets/Icon-tech/js.png",
@@ -118,77 +265,6 @@ let myApp = {
                     </a>
                     </div>
                     `,
-                },
-                {
-                    name:"Sales app",
-                    p_img:"images/projets/Kotlin-sales-app/0q.PNG",
-                    technology:"images/projets/Icon-tech/kotlin.png",
-                    language_or_technology: 'Kotlin PHP',
-                    title: 'Sales App',
-                    slide_indicator:`
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                    `,
-                    images: `
-                    <div class="carousel-item active">
-                       <img src="images/projets/Kotlin-sales-app/0q.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/02.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/03.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/04.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/05.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/06.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/07.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/08.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="images/projets/Kotlin-sales-app/09.PNG" class="d-block w-100 image-carousel" alt="...">
-                    </div>
-                    `,
-                    description: `
-                    <p><b>Description:</b> It's a final school project, is a sales app that allow to create two type of users 
-                    'seller' or 'customer'
-                    <br><br>
-                    A customer can upload his business, seller user can upload products and items into his business or enterprises 
-                    as a customer user, you can make a research of all bussiness, bussiness in your city, or make a research by name, type or city,
-                    also you can make the same type of research for any product, the app has a nav menu, and some fragments, bussiness (all, local or x type),
-                    products and services, shopping cart and a fragment to your profile, you can buy, cancel product, edit your bought before you pay, and finaly, 
-                    once time you recieve your product, you can vote it, then, other users can se the average for that product.<br><br>
-                    features: Any user can buy, comment, cancel products, add products to your shopping car, edit them and delete them,
-                    as a seller user, you can add products to your store, edit them, delete them ad hide them, finaly, both users can see the process of the sale
-                    both types of users have a record, but seller user has a record of his sales.
-                    <br><br>
-                    this project was createrd with kotlin, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
-                    </p>
-                    <div id="content-buton-project">
-                    <a class="button-go" onclick="open('https://github.com/serchonodera117/proyecto_final','Project','height=700,width=700')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    Github
-                    </a>
-                    </div>
-                    `
                 },
                 {
                     name:"GPS application",

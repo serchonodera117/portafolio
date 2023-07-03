@@ -370,7 +370,8 @@
 
       <!--PROJECT CARDS-->
     <div id="div-projects" class="cards-container area" v-if="section==2">
-     <a class="div-card-body" data-bs-toggle="modal" data-bs-target="#Modal-projects" v-for="(project,index) in project_cards" 
+     <a class="div-card-body" data-bs-toggle="modal" data-bs-target="#Modal-projects" 
+     v-for="(project,index) in project_cards" 
      v-bind:key="project" @click="setproject(index)">
         <div class="project-img-container">
             <div class="inner-textimg-container">
@@ -383,7 +384,8 @@
         <hr>
         <div class="div-description">
             <img class="img-techtnology-project" :src="project.technology">
-            {{project.name}} 
+            {{project.name}} <br>
+            <small><b>Developed using</b>: {{project.language_or_technology}}</small>
           </div>
      </a>   
     </div>
