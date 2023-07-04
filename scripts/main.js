@@ -955,6 +955,7 @@ let myApp = {
                 anySlideIndicator:'',
                 anyTechIMG:'',
                 anyDescription:'',
+                anyLanguageOrTechnology:'',
                }
               anyObject.anyName = this.project_cards[i].name
               anyObject.anyImage = this.project_cards[i].p_img
@@ -962,6 +963,7 @@ let myApp = {
               anyObject.anySlideIndicator = this.project_cards[i].slide_indicator
               anyObject.anyTechIMG = this.project_cards[i].technology
               anyObject.anyDescription = this.project_cards[i].description
+              anyObject.anyLanguageOrTechnology = this.project_cards[i].language_or_technology
               this.search_array.push(anyObject);
               // console.log(anyObject)
             }

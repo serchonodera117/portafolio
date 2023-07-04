@@ -275,7 +275,7 @@
        <div class="project-img-container">
            <div class="inner-textimg-container">
            </div>
-           <span class="certified-inner-text">
+           <span class="inner-text-img">
              See more
            </span>
            <img class="project-image" alt="img_project.png" :src="searched.anyImage">
@@ -283,7 +283,8 @@
        <hr>
        <div class="div-description">
            <img class="img-techtnology-project" :src="searched.anyTechIMG">
-           {{searched.anyName}} 
+           {{searched.anyName}}  <br>
+           <small><b>Developed using</b>: {{searched.anyLanguageOrTechnology}}</small>
          </div>
     </a>   
    </div> 
