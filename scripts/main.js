@@ -826,6 +826,14 @@ let myApp = {
             },
           ],
           soft_skills: [{
+            name:'Empathy',
+            img:'images/projets/Icon-sft-skills/empathy.png'
+          },
+          {
+            name: 'Organized',
+            img:'images/projets/Icon-sft-skills/organized.webp'
+          },
+          {
             name: 'Communication',
             img:'images/projets/Icon-sft-skills/communication.png'
           },
