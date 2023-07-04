@@ -135,7 +135,7 @@ let myApp = {
                   as a seller user, you can add products to your store, edit them, delete them ad hide them, finaly, both users can see the process of the sale
                   both types of users have a record, but seller user has a record of his sales.
                   <br><br>
-                  this project was createrd with kotlin, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
+                  this project was created with kotlin, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
                   </p>
                   <div id="content-buton-project">
                   <a class="button-go" onclick="open('https://github.com/serchonodera117/proyecto_final','Project','height=700,width=700')">
@@ -204,7 +204,7 @@ let myApp = {
                   or search for all ussers saved into the database, you can send friend recuest and receive them, accepting or refusing them, and
                   also you can reasearch into your contacts, send messages and receive notifications with the date time that they were sent.
                   <br><br>
-                  this project was createrd with React js, javascript, html, css, and Firebase Firestore.
+                  this project was created with React js, javascript, html, css, and Firebase Firestore.
                   </p>
                   <div id="content-buton-project">
                     <a class="button-go" onclick="open('https://serchonodera117.github.io/react_chat/build/','Project','height=700,width=700')">
@@ -280,7 +280,7 @@ let myApp = {
                   On this little platform you can create your user account and log into it to create tasks, edit and delete them
 
                   <br><br>
-                  this project was createrd with React js, javascript, html, css, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
+                  this project was created with React js, javascript, html, css, and it's APIS was created by me using php and phpmyandmin (in a basic level), and currently is hosted in 000webhost.
                   </p>
                   <div id="content-buton-project">
                     <a class="button-go" onclick="open('https://serchonodera117.github.io/react_to_dp_list/build/','Project','height=700,width=700')">
@@ -292,6 +292,55 @@ let myApp = {
                     </a>
 
                   <a class="button-go" onclick="open('https://github.com/serchonodera117/react_to_dp_list','Project','height=700,width=700')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  Github
+                  </a>
+                  </div>
+                  `
+                 },
+
+                 {
+                  name: "3D unity game practice",
+                  p_img: "images/projets/unity_3d_game/UG_0.png",
+                  technology: "images/projets/Icon-tech/unity.png",
+                  language_or_technology: "Unity C# VroidStudio Mixamo",
+                  title:"3D unity game practice",
+                  slide_indicator:`
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 0"></button>
+                  `,
+                  images:`
+                  <div class="carousel-item active">
+                    <img src="images/projets/unity_3d_game/UG_0.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/unity_3d_game/UG_1.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/unity_3d_game/UG_2.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/unity_3d_game/UG_3.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/projets/unity_3d_game/UG_4.png" class="d-block w-100 image-carousel" alt="...">
+                  </div>
+                  `,
+                  description:`
+                  <p><b>Description:</b> I's a personal project to learn and practice Mechanics and coding techniques into Unity engine
+                  <br><br>
+                  On this little game, you can do the basic mechanics, you can walk on a platform, jump, dance, and to have double jump
+
+                  <br><br>
+                  this project was created by Using C#, Unity, Mixamo, and Vroid Studio.
+                  </p>
+                  <div id="content-buton-project">
+                  <a class="button-go" onclick="open('https://github.com/serchonodera117/unity3d_basic_mechanics_practice','Project','height=700,width=700')">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                   </svg>
