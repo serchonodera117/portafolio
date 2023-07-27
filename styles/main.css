@@ -8,6 +8,8 @@
     --sticked-border: 3px groove rgb(61, 27, 134)!important;
 
     --delay-header-img: 1s ease-in-out;
+
+    --bg-btn-play-video: #040e7c;
 }
 *{
     margin: 0;
@@ -591,4 +593,15 @@
         width: 30rem !important;
         height: 20rem !important;
       }
+}
+
+
+.play-video-btn{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    background-color: var(--bg-btn-play-video);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
 }
