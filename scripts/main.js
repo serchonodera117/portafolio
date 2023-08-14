@@ -157,6 +157,9 @@ let myApp = {
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  
                   `,
                   images: `
                   <div class="carousel-item active">
@@ -169,6 +172,18 @@ let myApp = {
                   <video  class="d-block w-100 image-carousel" controls="controls">
                       <div class="play-video-btn"></div>
                       <source src="images/projets/lora_chan_AI/videos_demostration/code_writing_demostration.mp4" type="video/mp4"/>
+                   </video>
+                  </div>
+                  <div class="carousel-item">
+                  <video  class="d-block w-100 image-carousel" controls="controls">
+                      <div class="play-video-btn"></div>
+                      <source src="images/projets/lora_chan_AI/videos_demostration/voice_commands.mp4" type="video/mp4"/>
+                   </video>
+                  </div>
+                  <div class="carousel-item">
+                  <video  class="d-block w-100 image-carousel" controls="controls">
+                      <div class="play-video-btn"></div>
+                      <source src="images/projets/lora_chan_AI/videos_demostration/code_for_voice.mp4" type="video/mp4"/>
                    </video>
                   </div>
                 `,
