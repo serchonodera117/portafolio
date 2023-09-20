@@ -1077,7 +1077,7 @@ let myApp = {
         },
  //WAYS TO CONTACT       
         wsp_contact(){
-            let url="https://api.whatsapp.com/send?phone=+523122282017&text=Hola, buen día...";
+            let url="https://api.whatsapp.com/send?phone=+523121998140&text=Hola, buen día...";
             let newWin = open(url,'whatsapp', 'height=700, width=700');
         },
         gmail_contact(){
