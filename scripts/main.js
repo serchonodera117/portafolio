@@ -1009,6 +1009,11 @@ let myApp = {
 
           certifications_cards:[
             {
+              name: 'Introduction to version controller with Git',
+              img: 'images/certifications/introduction_to_git_microsoft_learns.png',
+              description: 'Github Universe Cloud Skills Challenge completed, a certification by Microsoft Learns and Github',
+            },
+            {
               name:'Winner of Game 4 Empowerment',
               img:'images/certifications/Reconocimiento_G4E_2022_Ganadores-GARCIA_MICHEL_SERGIO.png',
               description:"my game 'Gisselles Adventure', won as the best contribution "
